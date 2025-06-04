@@ -4,13 +4,14 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   body {
+    margin: 0 auto;
     overflow: hidden;
   }
 `;
 
 const PaymentContainer = styled.div`
   padding: 1.5rem;
-  padding-bottom: 7rem;
+  padding-bottom: 15rem;
   max-width: 28rem;
   margin: 0 auto;
   background-color: #008C0E;
@@ -21,7 +22,7 @@ const SquareBox = styled.div`
   width: 85%;
   background-color: #fff;
   border-radius: 20px;
-  padding-top: 180px;
+  padding-top: 280px;
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
