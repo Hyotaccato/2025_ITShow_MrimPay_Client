@@ -5,24 +5,25 @@ import styled, { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   body {
+    margin: 0 auto;
     overflow: hidden;
   }
 `;
 
 const Container = styled.div`
   padding: 1.5rem;
-  padding-bottom: 7rem;
+  padding-bottom: 30rem;
   max-width: 28rem;
   margin: 0 auto;
   background-color: #008C0E;
 `;
 
-const Title = styled.h2`
+const Title = styled.p`
   text-align: center;
   font-size: 25px;
   color: white;
   -webkit-text-stroke: 0.8px white;
-  margin-top: 70px;
+  margin-top: 80px;
   margin-bottom: 45px;
 `
 const Camerabox = styled.div`
@@ -34,8 +35,8 @@ const Camerabox = styled.div`
 const CameraWrapper = styled.div`
   margin-top: 5%; 
   margin-bottom: 30%;
-  width: 210px;
-  height: 210px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 4px double white;
   overflow: hidden;
@@ -50,33 +51,33 @@ const StyledWebcam = styled(Webcam)`
   object-fit: cover;
 `
 
-const Subtitle = styled.div`
-  color: white;
+
+const SubTitle = styled.div`
+  margin-top: 192px;
+  margin-bottom: -60px;  
   text-align: center;
-  font-size: 1.3rem;
-  margin-top: 100px;
-  -webkit-text-stroke: 0.4px white;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  color: white;
+  -webkit-text-stroke: 0.8px white;
 `
-const Button = styled.button`
-  margin: 40px auto 0 auto; 
-  margin-top: 40px;
-  width: 350px;
-  height: 60px;
-  border-radius: 12px;
-  border: 2px solid white;
-  background-color: white;
-  color: black;
-  font-size: 1.1rem;
-  cursor: pointer;
-    display: flex;
+const Wrapper = styled.div`
+  display: flex;
   justify-content: center;
   align-items: center;
 `
-const ButtonWrapper = styled.div`
+const Button = styled.div`
   display: flex;
+  width: 350px;
+  height: 60px;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  margin-top:100px;
+  border-radius: 10px;
+  border: 2px solid #FFF;
+  background: #FFF;
+  color: black;
+  -webkit-text-stroke: 0.4px black;
+
 `
 
 export default function Face() {
@@ -97,10 +98,10 @@ export default function Face() {
             />
           </CameraWrapper>
         </Camerabox>
-        <Subtitle>정면을 바라보고<br />인식을 기다려 주세요!</Subtitle>
-        <ButtonWrapper>
+        <SubTitle>정면을 바라보고<br />인식을 기다려 주세요!</SubTitle>
+        <Wrapper>
           <Button>취소</Button>
-        </ButtonWrapper>
+        </Wrapper>
       </Container>
     </>
   )

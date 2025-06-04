@@ -4,13 +4,14 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   body {
+    margin: 0 auto;
     overflow: hidden;
   }
 `;
 
 const PayContainer = styled.div`
   padding: 1.5rem;
-  padding-bottom: 7rem;
+  padding-bottom: 15rem;
   max-width: 28rem;
   margin: 0 auto;
   background-color: #008C0E;
@@ -25,7 +26,7 @@ const Title = styled.p`
 `
 
 const Barcode = styled.img`
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
   margin-left: -24px;
   width: 497px;
   max-width: 31rem;
@@ -34,7 +35,7 @@ const Barcode = styled.img`
 `
 
 const SubTitle = styled.div`
-  margin-top: -150px;  
+  margin-bottom: -60px;  
   text-align: center;
   font-size: 1.2rem;
   color: white;
@@ -51,7 +52,7 @@ const Button = styled.div`
   height: 60px;
   justify-content: center;
   align-items: center;
-  margin-top:45px;
+  margin-top:100px;
   border-radius: 10px;
   border: 2px solid #FFF;
   background: #FFF;

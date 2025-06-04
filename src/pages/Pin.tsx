@@ -1,12 +1,13 @@
 // import styled from "styled-components";
 import Pinimg from '../assets/PinRecognition.png';
-import deal from '../assets/deal.svg';
+import deal from '../assets/deal.png';
 import React, { useEffect, useState } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
 
 const GlobalStyle = createGlobalStyle`
   body {
+    margin: 0 auto;
     overflow: hidden;
   }
 `;
@@ -61,6 +62,7 @@ const Dot = styled.div<{ filled: boolean }>`
 `;
 
 const Keypad = styled.div`
+  margin-left: 35px;
   margin-top: 150px;
   position: absolute;
   top: 50%;
